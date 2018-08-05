@@ -362,6 +362,8 @@ h6 {
       top: 12vh; }
     #home .h-content.top-10 {
       top: 10vh; }
+    #home .h-content.top-5 {
+      top: 5vh; }
   #home.center {
     left: 0; }
   #home.full-width-left {
@@ -403,7 +405,8 @@ h6 {
 .social_tab .social_icons {
   color: #fff;
   display: inline-block;
-  padding-left: 15px; }
+  /* padding-left: 15px; */
+}
   .social_tab .social_icons li {
     display: inline;
     padding: 0 2.5px; }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>thetstoryco</title>
+    <title>thetstoryco | Home Decor & More</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- Favicon ================== -->
     <!-- Standard -->
@@ -20,18 +20,19 @@
                 <canvas id="geometric" height="300" width="450"> </canvas>
                 <div class="accent"> </div>
             </div>
-            <div id="home" class="center col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                <div class="h-content  text-dark text-center top-25"> <img class="mb50 mt65" src="assets/img/logo-black.png" alt="work" />
+            <div id="home" class="center col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="h-content  text-dark text-center top-5"> <img class="mb20 mt65" src="assets/img/logo-black.png" alt="work" style="width: 95%"/>
                     <!--                <h2 class="mid animated fadeInUp">Aloe, there. <span class="t-color fw500">2018</span</h2>-->
-                    <h3 class="mid animated fadeInUp mb20  ">Home Décor &amp; More</h3>
-                    <!-- <h4 class="mid animated fadeInUp mb20  ">Launching soon</h4> -->
+                    <h2 class="mid animated fadeInUp mb20  ">Home Décor &amp; More</h2>
+                    <h4 class="mid animated fadeInUp mb20  ">Latest From Our Instagram</h4>
+                    <div class="mid animated fadeInUp instafeed-style" id="instafeed">
+                    </div>
                     <!--                <h1 class=" mid animated fadeInUp fw700">Aloe, there.</h1>-->
-                    <div class="mt40 slow animated fadeInUp">
+                    <div class="mt20 slow animated fadeInUp">
                         <!--                  <a id="info" href="#info" class="btn-solid round">INFORMATION</a>-->
                         <div class="social_tab inline">
                             <ul class="social_icons  text-dark">
                                 <li><a href="https://www.facebook.com/thetstoryco/"><i class="ti-facebook "></i></a></li>
-                                <!--                      <li><a href="#"><i class="ti-twitter-alt "></i></a></li>-->
                                 <li><a href="https://www.instagram.com/thetstoryco/"><i class="ti-instagram "></i></a></li>
                             </ul>
                         </div>
@@ -60,6 +61,17 @@
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/shapify.js"></script>
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: 'user',
+        userId: '6222431398',
+        accessToken: '6222431398.1677ed0.4ceff2b7b36e4446867f25b2ff32f8a4',
+        template: '<a href="{{link}}"><img src="{{image}}" class="img-responsive" alt="instagram image"/></a>',
+        limit: 3
+      });
+      userFeed.run();
+    </script>
 </body>
 
 </html>
